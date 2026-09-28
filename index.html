@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f5f0" />
+    <meta
+      name="description"
+      content="A considered collection of everyday objects, selected for good design and made to last."
+    />
+    <title>Objects for everyday — Form & Field</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#top" aria-label="Form and Field home">
+          <span class="wordmark-mark" aria-hidden="true">f.</span>
+          <span>form <span class="wordmark-amp">&</span> field</span>
+        </a>
+        <nav class="topbar-actions" aria-label="Main navigation">
+          <a class="nav-link" href="#collection">Shop</a>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            aria-pressed="false"
+          >
+            <svg
+              class="theme-icon theme-icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="3.7" />
+              <path
+                d="M12 2v2.1m0 15.8V22m10-10h-2.1M4.1 12H2m17.1-7.1-1.5 1.5M6.4 17.6l-1.5 1.5m14.2 0-1.5-1.5M6.4 6.4 4.9 4.9"
+              />
+            </svg>
+            <svg
+              class="theme-icon theme-icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.1 15.1A8.4 8.4 0 0 1 8.9 3.9 8.5 8.5 0 1 0 20.1 15.1Z"
+              />
+            </svg>
+            <span class="toggle-label">Dark</span>
+          </button>
+          <button
+            class="bag-button"
+            type="button"
+            aria-label="Shopping bag, 0 items"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 8.5h14l1 12H4l1-12Z" />
+              <path d="M9 9V6a3 3 0 0 1 6 0v3" />
+            </svg>
+            <span>Bag</span><span class="bag-count" aria-live="polite">0</span>
+          </button>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="intro" aria-labelledby="page-title">
+          <div class="intro-copy">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span> The considered collection
+              <span class="eyebrow-line"></span> No. 04
+            </p>
+            <h1 id="page-title">Objects for<br /><span>everyday.</span></h1>
+            <p class="intro-description">
+              Good design earns its place. Meet three thoughtful essentials,
+              made to be used, loved, and kept close.
+            </p>
+          </div>
+          <div class="intro-aside" aria-hidden="true">
+            <span class="aside-index">01 — 03</span>
+            <span class="aside-rule"></span>
+            <span class="aside-note">A little less,<br />a lot better.</span>
+          </div>
+        </section>
+
+        <section
+          class="collection"
+          id="collection"
+          aria-labelledby="collection-title"
+        >
+          <div class="collection-heading">
+            <div>
+              <p class="section-kicker">Made for the moments in between</p>
+              <h2 id="collection-title">The edit <span>(03)</span></h2>
+            </div>
+            <p class="collection-note">
+              Useful things, beautifully considered.
+            </p>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card" style="--card-delay: 80ms">
+              <div class="product-image-wrap image-headphones">
+                <img
+                  src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1100&q=85"
+                  alt="Sculptural black and brass over-ear headphones"
+                />
+                <span class="product-label">Bestseller</span>
+                <button
+                  class="quick-view"
+                  type="button"
+                  aria-label="Quick view of Studio headphones"
+                  data-quick-view="Studio headphones"
+                >
+                  Quick view <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-title-row">
+                  <h3>Studio headphones</h3>
+                  <span class="product-price">$189</span>
+                </div>
+                <p class="product-detail">
+                  Quietly immersive. All-day comfortable.
+                </p>
+                <div class="product-bottom-row">
+                  <span class="product-category"
+                    ><span class="category-dot dot-graphite"></span> Audio</span
+                  >
+                  <button
+                    class="add-button"
+                    type="button"
+                    data-product="Studio headphones"
+                    aria-label="Add Studio headphones to bag"
+                  >
+                    Add to bag <span aria-hidden="true">+</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" style="--card-delay: 180ms">
+              <div class="product-image-wrap image-lamp">
+                <img
+                  src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1100&q=85"
+                  alt="Warm ambient light from a carefully designed table lamp"
+                  loading="lazy"
+                />
+                <span class="product-label label-new">Just landed</span>
+                <button
+                  class="quick-view"
+                  type="button"
+                  aria-label="Quick view of Arc table light"
+                  data-quick-view="Arc table light"
+                >
+                  Quick view <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-title-row">
+                  <h3>Arc table light</h3>
+                  <span class="product-price">$145</span>
+                </div>
+                <p class="product-detail">A softer kind of spotlight.</p>
+                <div class="product-bottom-row">
+                  <span class="product-category"
+                    ><span class="category-dot dot-coral"></span> Lighting</span
+                  >
+                  <button
+                    class="add-button"
+                    type="button"
+                    data-product="Arc table light"
+                    aria-label="Add Arc table light to bag"
+                  >
+                    Add to bag <span aria-hidden="true">+</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" style="--card-delay: 280ms">
+              <div class="product-image-wrap image-speaker">
+                <img
+                  src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=1100&q=85"
+                  alt="Compact portable wireless speaker in a deep charcoal finish"
+                  loading="lazy"
+                />
+                <span class="product-label label-limited">Small batch</span>
+                <button
+                  class="quick-view"
+                  type="button"
+                  aria-label="Quick view of Field speaker"
+                  data-quick-view="Field speaker"
+                >
+                  Quick view <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-title-row">
+                  <h3>Field speaker</h3>
+                  <span class="product-price">$220</span>
+                </div>
+                <p class="product-detail">Big sound. No unnecessary noise.</p>
+                <div class="product-bottom-row">
+                  <span class="product-category"
+                    ><span class="category-dot dot-olive"></span> Audio</span
+                  >
+                  <button
+                    class="add-button"
+                    type="button"
+                    data-product="Field speaker"
+                    aria-label="Add Field speaker to bag"
+                  >
+                    Add to bag <span aria-hidden="true">+</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>Form & Field</span
+        ><span>Thoughtful things for everyday living.</span><span>© 2026</span>
+      </footer>
+      <div class="toast" role="status" aria-live="polite"></div>
+    </div>
+  </body>
+</html>
